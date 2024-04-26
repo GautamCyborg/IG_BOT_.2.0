@@ -1,0 +1,26 @@
+{
+  "name": "IG BOT",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Extract links from Excel sheet and perform repeated actions",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "background",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "R.png"
+  }
+}
+
